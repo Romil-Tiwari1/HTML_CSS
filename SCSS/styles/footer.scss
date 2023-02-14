@@ -1,0 +1,45 @@
+/*Style Class: Footer section*/
+@use "sass:math";
+footer {
+    text-align: $text-align-left;
+    display: $display-flex;
+    margin-top: $value-100px * $value-2;
+    width: math.percentage(0.93);
+    height: math.percentage(0.55);
+    padding: $value-15px * $value-2;
+    background-color: $footer-color;
+    color: $color-black;
+    border-radius: $value-10px;
+    font-size: $value-20px;
+}
+
+.footer-center {
+    text-align: $text-align-center;
+    display: $display-flex;
+    padding-left: $value-100px * $value-2;
+    color: $color-black;
+    border-radius: $value-10px;
+}
+
+.footer-right {
+    text-align: $text-align-right;
+    display: $display-flex;
+    padding-left: $value-100px * $value-2 + math.div($value-100px, $value-2);
+    color: $color-black;
+    border-radius: $value-10px;
+    padding-top: $value-15px;
+}
+
+.footer-main {
+    padding-left: $value-100px - $value-20px;
+}
+
+.icon-facebook {
+    width: $value-15px * $value-2;
+    height: $value-15px * $value-2;
+}
+
+.icon-linkedin {
+    @extend .icon-facebook;
+    padding-left: 5px;
+}

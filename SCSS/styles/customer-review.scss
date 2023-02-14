@@ -1,0 +1,59 @@
+/*Style Class: Customer Review section*/
+
+@use "sass:math";
+
+.customer-review {
+    margin-left: $value-100px - ($value-15px * $value-2);
+    margin-right: math.div($value-100px, $value-2);
+    display: $display-flex;
+    flex-direction: $flex-direction-row;
+    font-family: $font-Arial;
+    text-justify: $text-justify;
+    margin-top: $value-100px;
+    padding-left: $value-20px + $value-15px;
+}
+
+.customer-review-heading {
+    text-align: $text-align-center;
+    margin-top: math.div($value-100px, $value-2);
+    font-family: $font-Arial;
+}
+
+.review-card {
+    @include card-style-border;
+    width: $percent-50;
+    display: $display-flex;
+    flex-direction: $flex-direction-column;
+    margin-right: $value-10px;
+    border-radius: $value-10px;
+    height: $value-100px * $value-2;
+}
+
+.review-1 {
+    padding-left: $value-10px;
+    padding-top: $value-10px;
+    width: $percent-7;
+    height: $percent-50;
+    opacity: math.div($value-2, 4);
+    padding-right: $value-10px;
+}
+
+.review-2 {
+    padding-left: $value-10px;
+    padding-top: $value-15px * $value-2;
+    width: $percent-10;
+}
+
+.container-2 {
+    position: $display-relative;
+    color: $color-black;
+    font-size: $value-15px;
+    display: $display-flex;
+    font-family: $font-Arial;
+    text-justify: $text-justify;
+}
+
+.review-text {
+    padding-left: $value-20px;
+    padding-top: $value-10px;
+}

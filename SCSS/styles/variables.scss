@@ -1,0 +1,131 @@
+/*Variable SCSS*/
+
+/*Header CSS*/
+$button-connect-color: rgb(68, 104, 225);
+$color-white: rgb(255, 255, 255);
+$display-flex: flex;
+$font-Arial : Arial,
+Helvetica,
+sans-serif;
+$value-100px: 100px;
+$text-justify: auto;
+$flow-right: right;
+$base-font: sans-serif;
+
+$flow-left: left;
+
+/*Title Form*/
+
+$display-relative: relative;
+$display-block: block;
+$display-inline: inline;
+$text-align-center: center;
+$color-black: rgb(0, 0, 0);
+$position-abs: absolute;
+$border-0px: 0px;
+
+@mixin card-style-border {
+    border: 2px solid #dadada;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+@mixin center-element {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+$color-span-select : rgb(221, 212, 212);
+$color-center-element: rgba(255, 255, 255, 0.918);
+
+/*Best Practices and Destination Cards*/
+$flex-direction-column: column;
+$flex-direction-row: row;
+$text-align-left: left;
+$text-align-right: right;
+$display-inline-block: inline-block;
+$value-10px: 10px;
+$value-15px: 15px;
+$value-20px: 20px;
+
+$value-300px: 300px;
+
+@mixin bestpractice-card {
+    display: $display-flex;
+    font-family: $font-Arial;
+    text-justify: auto;
+}
+
+@mixin text-float-left {
+    text-align: right;
+    float: left;
+    clear: left;
+    padding-top: 10px;
+}
+
+@mixin text-float-right {
+    text-align: right;
+    float: right;
+    clear: right;
+    padding-top: 10px;
+}
+
+/*Blog Section*/
+
+$display-grid: grid;
+$font-Verdana: Verdana, Geneva, Tahoma, sans-serif;
+$percent-50: 50%;
+$percent-80: 80%;
+$percent-85: 85%;
+
+@mixin container-image-small {
+    height: $value-100px * 2 + 50px;
+    width: $value-100px * 5;
+    border-radius: $value-20px;
+}
+
+@mixin blog-container-text {
+    position: $display-relative;
+    text-align: $text-align-center;
+    color: $color-white;
+}
+
+@mixin blog-small {
+    font-size: $value-20px;
+    height: $value-300px;
+    width: $value-300px * 2;
+    color: $color-white;
+}
+
+/*Customer review Section*/
+$percent-10: 10%;
+$percent-7: 7%;
+$value-2: 2;
+$value-3: 3;
+
+/*Footer Section*/
+$footer-color: rgb(224, 232, 248);
+
+@function textFont($text) {
+    @if (text=="header") {
+        $base-font: sans-serif;
+    }
+
+    @else {
+        $base-font: Arial,
+        Helvetica,
+        sans-serif;
+    }
+
+    @return $base-font;
+}
+
+$count: 0;
+
+@while $count <5 {
+    .footer-li#{$count} {
+        margin: 5px;
+    }
+
+    $count: $count+1;
+}

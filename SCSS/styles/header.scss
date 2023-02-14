@@ -1,0 +1,47 @@
+/*Style Class: Header section*/
+.nav-main {
+    position: fixed;
+    top: 0;
+}
+.header {
+    overflow: hidden;
+    padding: $value-20px $value-10px;
+    display: $display-flex;
+    margin-left: $value-10px;
+    margin-top: $value-10px;
+    padding-left: $value-20px + $value-15px;
+}
+
+.header-center {
+    display: $display-flex;
+    font: textFont(header);
+    margin-left: $value-100px * $value-2 * $value-2 + $value-20px;
+}
+
+.header-button {
+    background-color: $button-connect-color;
+    font-size: $value-15px;
+    color: $color-white;
+    border-radius: $value-20px;
+    float: $flow-right;
+    margin-left: $value-100px * $value-2 * $value-2 + $value-10px;
+    border: none;
+    height: $value-15px * $value-2;
+    width: $value-20px * $value-2 * $value-2;
+}
+
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  } 

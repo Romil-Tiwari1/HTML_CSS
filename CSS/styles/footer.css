@@ -1,0 +1,50 @@
+/*Style Class: Footer section*/
+footer {
+    text-align: left;
+    display: flex;
+    margin-top: 200px;
+    width: 93%;
+    height: 55%;
+    padding: 30px;
+    background-color: rgb(200, 202, 202);
+    color: black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.footer-center {
+    text-align: center;
+    display: flex;
+    padding-left: 200px;
+    color: black;
+    border-radius: 10px;
+}
+
+.footer-right {
+    text-align: right;
+    display: flex;
+    padding-left: 250px;
+    color: black;
+    border-radius: 10px;
+    padding-top: 15px
+}
+
+.footer-main {
+    padding-left: 80px
+}
+
+.icon-facebook{
+width: 30px;
+height: 30px;
+}
+
+.icon-linkedin{
+    width: 30px;
+    height: 30px;
+    padding-left: 5px
+}
+
+.icon-instagram{
+    width: 40px;
+    height: 2%;
+}

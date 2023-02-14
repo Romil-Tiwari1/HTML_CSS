@@ -1,0 +1,101 @@
+/*Style Class: Title and Form Section*/
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-left: 10px;
+    font-size: 60px ;
+    
+}
+
+.img{
+    background-image: url("../images/lalo-hernandez-Amo081zdJsI-unsplash.png");
+    width: 90%;
+    height: 500px;
+    margin-left: 50px;
+    border-radius: 10px ;
+    filter: contrast(60%);
+    filter: brightness(50%);
+}
+
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-elelemnt {
+    position: absolute;
+    font-size: 20px;
+    height: 300px;
+    width: 600px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.centered-element-2 {
+    position: absolute;
+    top: 70%;
+    left: 47%;
+    transform: translate(-45%, -50%);
+    background-color: rgba(255, 255, 255, 0.918);
+    height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+
+}
+
+.form-main {
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+
+}
+ /*Style for search bar and form*/
+ span {
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 2px; 
+    height: 30px;
+    border: 0px;
+ 
+
+}
+
+span select input {
+    display: block;
+    position: absolute;
+    border: 0px;
+    color: rgb(221, 212, 212);
+}
+
+span input {
+    margin-top: 3px;
+    text-align: center;
+    border: 0px;
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+
+}
+
+span label {
+    display: block;
+    position: relative;
+    text-align: center;
+    border: 0px;     
+}
+
+.button-explore {
+    display: inline;
+    width: 150px;
+    height: 40px;
+    margin-right: 15px;
+    background-color: rgb(68, 104, 225);
+    border:none;
+    color: white;
+    border-radius: 10px ;
+}
+

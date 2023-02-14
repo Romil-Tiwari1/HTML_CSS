@@ -1,0 +1,59 @@
+/*Style Class: Customer Review section*/
+
+.customer-review {
+    margin-left: 70px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    text-justify: auto;
+    margin-top: 100px;
+    padding-left: 35px;
+}
+
+.customer-review-heading {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.review-card {
+    border: 2px solid #dadada;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.review-1 {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 7%;
+    height: 50%;
+    opacity: 0.5;
+    padding-right: 10px;
+}
+
+.review-2 {
+    padding-left: 10px;
+    padding-top: 30px;
+    width: 10%;
+}
+
+.container-2 {
+    position: relative;
+    color: black;
+    font-size: 15px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    text-justify: auto;
+}
+
+.review-text {
+    padding-left: 20px;
+    padding-top: 10px;
+}

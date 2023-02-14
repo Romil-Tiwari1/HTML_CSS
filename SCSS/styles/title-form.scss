@@ -1,0 +1,100 @@
+/*Style Class: Title and Form Section*/
+@use "sass:math";
+
+.container {
+    position: $display-relative;
+    text-align: $text-align-center;
+    color: $color-white;
+    padding-left: $value-10px;
+    font-size: $value-20px * 3;
+
+}
+
+.img {
+    background-image: url("../images/lalo-hernandez-Amo081zdJsI-unsplash.png");
+    width: percentage(0.9);
+    height: $value-100px * 5;
+    margin-left: $value-10px * 5;
+    border-radius: $value-10px ;
+    filter: contrast(percentage(0.6));
+    filter: brightness($percent-50);
+}
+
+.centered {
+    @include center-element;
+    top: 30%;
+    left: $percent-50;
+}
+
+.centered-elelemnt {
+    @include center-element;
+    font-size: $value-20px;
+    height: $value-300px;
+    width: $value-300px * $value-2;
+    top: 70%;
+    left: $percent-50;
+}
+
+.centered-element-2 {
+    position: $position-abs;
+    top: 70%;
+    left: 47%;
+    transform: translate(-45%, -50%);
+    background-color: $color-center-element;
+    height: $value-20px * 3 + $value-10px;
+    font-family: textFont(form);
+    border-radius: $value-10px;
+
+}
+
+.form-main {
+    color: $color-black;
+    font-size: $value-15px;
+    margin-top: $value-10px;
+
+}
+
+/*Style for search bar and form*/
+span {
+    display: $display-inline-block;
+    margin-left: $value-10px;
+    border-radius: 2px;
+    height: $value-15px * $value-2;
+    border: $border-0px;
+
+
+}
+
+span select input {
+    display: $display-block;
+    position: $position-abs;
+    border: $border-0px;
+    color: $color-span-select;
+}
+
+span input {
+    margin-top: 3px;
+    text-align: $text-align-center;
+    border: $border-0px;
+    color: $color-black;
+    opacity: math.div($value-2, $value-2*$value-2);
+
+}
+
+span label {
+    display: $display-block;
+    position: $display-relative;
+    text-align: $text-align-center;
+    border: $border-0px;
+}
+
+.button-explore {
+    display: $display-inline;
+    width: math.div($value-300px, $value-2);
+    height: $value-20px * $value-2;
+    margin-right: $value-15px;
+    background-color: $button-connect-color;
+    border: none;
+    color: $color-white;
+    border-radius: $value-10px;
+}

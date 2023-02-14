@@ -1,0 +1,132 @@
+/*Style for cards*/
+@use "sass:math";
+
+.card {
+    @include card-style-border;
+    width: math.percentage($number: 0.45);
+    display: $display-flex;
+    flex-direction: $flex-direction-column;
+    margin-right: $value-20px * $value-2;
+    border-radius: $value-10px;
+}
+
+/*Style for cards in recommended destination section*/
+.card-2 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    width: $value-300px + 70px;
+    height: $value-300px - 47px;
+    display: $display-flex;
+    flex-direction: $flex-direction-column;
+    margin-right: $value-100px - $value-10px;
+    margin-left: $value-20px;
+    border-radius: $value-20px;
+}
+
+.card-border {
+    border-radius: $value-20px;
+}
+
+
+.test {
+    @include bestpractice-card;
+    margin-left: $value-20px;
+    flex-direction: $flex-direction-row;
+}
+
+.card-practices {
+    @include bestpractice-card;
+    margin-left: $value-100px - ($value-15px * $value-2);
+    margin-right: math.div($value-100px, $value-2);
+    margin-top: $value-100px;
+    flex-direction: $flex-direction-row;
+
+}
+
+.test-1 {
+    @include bestpractice-card;
+    margin-top: $value-300px;
+    margin-left: $value-10px + $value-15px;
+    flex-direction: $flex-direction-row;
+}
+
+.container-1 {
+    position: $display-relative;
+    text-align: $text-align-left;
+    color: $color-black;
+    font-size: $value-15px;
+}
+
+
+
+.card-3 {
+    width: $value-300px + $value-100px - $value-20px;
+}
+
+.internal-card {
+    display: $display-flex;
+    float: $flow-left;
+    width: $value-15px * $value-2;
+    height: $value-15px * $value-2
+}
+
+.internal-card-span {
+    @include text-float-right;
+    padding-right: $value-15px;
+}
+
+.internal-card-span-2 {
+    @include text-float-left;
+}
+
+.internal-card-span-3 {
+    @include text-float-right;
+    padding-right: $value-15px;
+}
+
+.card-internal {
+    width: $value-100px - $value-10px;
+    height: $value-100px - $value-10px;
+    padding-top: $value-10px;
+    padding-left: $value-10px;
+}
+
+.card-text {
+    padding-left: $value-10px;
+}
+
+/*Style for Recommended destination text*/
+.destination-options {
+    text-align: $text-align-center;
+    margin-top: $value-300px - $value-100px;
+    font-family: $font-Arial;
+}
+
+li {
+    display: $display-inline-block;
+    padding: $value-20px $border-0px $value-10px;
+    vertical-align: middle;
+}
+
+a {
+    position: $display-relative;
+    display: $display-flex;
+    color: $color-black;
+}
+
+a:active::before {
+    background-color: $color-black;
+}
+
+a {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+    padding-left: $value-10px;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #999;
+    text-decoration: underline;
+}
